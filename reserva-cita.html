@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reserva Cita - Clínica SiSAnna</title>
+</head>
+<body>
+    <header>
+        <h1>Clínica SiSAnna</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">¿Quiénes Somos?</a></li>
+                <li><a href="dr-recomendados.html">Dr. Recomendados</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="reserva-cita.html">Reserva Cita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Reserva tu Cita Médica</h2>
+            <p>Completa el siguiente formulario para reservar una cita con nuestros especialistas.</p>
+            <form action="confirm.html" method="GET" class="reserva-cita-form"> <!-- Cambié POST a GET -->
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" name="nombres" required>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" id="domicilio" name="domicilio" required>
+
+                <label for="especialidad">Escoger una Especialidad Médica:</label>
+                <select id="especialidad" name="especialidad" required>
+                    <option value="medicina-general">Medicina General</option>
+                    <option value="ginecologia">Ginecología</option>
+                    <option value="pediatria">Pediatría</option>
+                    <!-- Añadir más opciones según las especialidades -->
+                </select>
+
+                <label for="fecha-preferida">Fecha Preferida:</label>
+                <input type="date" id="fecha-preferida" name="fecha-preferida" required>
+
+                <label for="hora-preferida">Hora Preferida:</label>
+                <input type="time" id="hora-preferida" name="hora-preferida" required>
+
+                <label for="motivo-consulta">Motivo de Consulta:</label>
+                <textarea id="motivo-consulta" name="motivo-consulta" rows="4" required></textarea>
+
+                <label for="dni">Documento de Identidad (DNI):</label>
+                <input type="text" id="dni" name="dni" required>
+
+                <label for="historial-medico">Historial Médico:</label>
+                <textarea id="historial-medico" name="historial-medico" rows="4"></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Clínica SiSAnna. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

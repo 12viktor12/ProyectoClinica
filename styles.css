@@ -1,0 +1,189 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #007bff;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tamaño del título principal */
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 1.5em; /* Tamaño del subtítulo */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas */
+    align-items: center;
+    justify-content: center; /* Centra el contenido en la sección */
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007bff;
+    color: #ffffff;
+    width: 100%;
+}
+
+/* Estilos para botones */
+.btn, .btn-aceptar, .btn-crear-cuenta {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin: 10px; /* Espacio entre botones */
+}
+
+.btn:hover, .btn-aceptar:hover, .btn-crear-cuenta:hover {
+    background: #0056b3;
+}
+
+/* Formularios */
+.login-form, .crear-cuenta-form, .reserva-cita-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ancho del formulario al 100% */
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario en la página */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para la confirmación */
+section {
+    text-align: center;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column; /* Apila el texto y la imagen en pantallas pequeñas */
+    }
+
+    .text, .image {
+        padding: 10px;
+        text-align: center; /* Centra el texto y la imagen */
+    }
+
+    h1 {
+        font-size: 2em; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Reduce el tamaño del subtítulo en pantallas pequeñas */
+    }
+}
+
+/* Estilos específicos para el home */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+video {
+    width: 100%; /* Ajusta el tamaño del video a 100% del contenedor */
+    max-width: 1200px; /* Tamaño máximo del video */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.botones {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    margin: 20px;
+}
+
+.footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 86vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-description {
+    text-align: justify;
+  }
+
+  
