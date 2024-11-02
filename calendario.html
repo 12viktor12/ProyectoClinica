@@ -33,6 +33,20 @@
         <div id='calendar'></div>
     </main>
 
+    <div class="modal fade" id="eventDetailsModal" tabindex="-1" aria-labelledby="eventDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="eventDetailsModalLabel">Detalles de la Cita</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="eventDetails">
+              <!-- Aquí se mostrarán los detalles del evento -->
+            </div>
+          </div>
+        </div>
+      </div>
+
     <!-- Modal para agregar eventos -->
     <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -69,12 +83,12 @@
                                 <option value="">Seleccione un horario</option>
                             </select>
                         </div>
-                        <button type="button" class="btn btn-primary" onclick="guardarCita()">Guardar Cita</button>
+                       
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" id="saveEvent">Guardar Evento</button>
+                    <button id="guardarCitaBtn" type="button" class="btn btn-primary" onclick="guardarCita()">Guardar Cita</button>
                 </div>
             </div>
         </div>
